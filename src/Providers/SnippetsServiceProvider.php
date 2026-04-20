@@ -89,15 +89,33 @@ class SnippetsServiceProvider extends ServiceProvider
             }
             
             DashboardMenu::default()->beforeRetrieving(function () {
-                DashboardMenu::registerItem([
-                    'id' => 'cms-plugins-snippets',
-                    'priority' => 5,
-                    'parent_id' => null,
-                    'name' => 'plugins/snippets::snippets.name',
-                    'icon' => 'ti ti-code',
-                    'url' => route('snippets.index'),
-                    'permissions' => ['snippets.index'],
-                ]);
+                DashboardMenu::make()
+                    ->registerItem([
+                        'id' => 'cms-plugins-snippets',
+                        'priority' => 5,
+                        'name' => 'plugins/snippets::snippets.name',
+                        'icon' => 'ti ti-code',
+                        'url' => route('snippets.index'),
+                        'permissions' => ['snippets.index'],
+                    ])
+                    ->registerItem([
+                        'id' => 'cms-plugins-snippets-all',
+                        'priority' => 1,
+                        'parent_id' => 'cms-plugins-snippets',
+                        'name' => 'plugins/snippets::snippets.name',
+                        'icon' => null,
+                        'url' => route('snippets.index'),
+                        'permissions' => ['snippets.index'],
+                    ])
+                    ->registerItem([
+                        'id' => 'cms-plugins-snippets-settings',
+                        'priority' => 2,
+                        'parent_id' => 'cms-plugins-snippets',
+                        'name' => 'Settings',
+                        'icon' => null,
+                        'url' => route('snippets.settings'),
+                        'permissions' => ['snippets.index'],
+                    ]);
             });
     }
 }
