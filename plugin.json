@@ -6,6 +6,6 @@
     "author": "Entomai",
     "url": "https://entomai.com",
     "version": "1.0.4",
-    "description": "Run custom php on Admin, Frontend, api or custom route, roles or by capabilities.",
+    "description": "Execute custom PHP snippets securely across Admin, Frontend, and API routes with live preview, syntax validation, and emergency rescue mode.",
     "minimum_core_version": "7.0.0"
 }
