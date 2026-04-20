@@ -1,0 +1,11 @@
+{
+    "id": "entomai/snippets",
+    "name": "Snippets",
+    "namespace": "Botble\\Snippets\\",
+    "provider": "Botble\\Snippets\\Providers\\SnippetsServiceProvider",
+    "author": "Entomai",
+    "url": "https://entomai.com",
+    "version": "1.0.1",
+    "description": "Run custom php on Admin, Frontend, api or custom route, roles or by capabilities.",
+    "minimum_core_version": "7.0.0"
+}
