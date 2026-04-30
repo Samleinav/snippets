@@ -1,8 +1,25 @@
-/vendor
-/.idea
-/.vscode
-/node_modules
-npm-debug.log
-yarn-error.log
+# Local environment and editor files
+/.env
+/.idea/
+/.vscode/
+
+# Dependencies and generated caches
+/node_modules/
+/.phpunit.cache/
+/.phpunit.result.cache
+
+# Test and documentation-only files kept out of plugin releases
+/test/
+/tests/
+/docs-pro/
+/phpunit.xml
+/*.md
+/*.zip
+
+# Logs and OS noise
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 .DS_Store
-.env
+Thumbs.db

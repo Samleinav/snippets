@@ -6,6 +6,7 @@ use Botble\Base\Supports\ServiceProvider;
 use Botble\Base\Traits\LoadAndPublishDataTrait;
 use Botble\Base\Facades\DashboardMenu;
 use Botble\Snippets\Models\Snippets;
+use Botble\Snippets\Package\PackageServiceProvider;
 
 class SnippetsServiceProvider extends ServiceProvider
 {
@@ -13,6 +14,8 @@ class SnippetsServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
+        $this->app->register(PackageServiceProvider::class);
+
         $this
             ->setNamespace('plugins/snippets')
             ->loadHelpers()

@@ -5,7 +5,16 @@
     "provider": "Botble\\Snippets\\Providers\\SnippetsServiceProvider",
     "author": "Entomai",
     "url": "https://entomai.com",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Execute custom PHP snippets securely across Admin, Frontend, and API routes with live preview, syntax validation, and emergency rescue mode.",
-    "minimum_core_version": "7.0.0"
+    "minimum_core_version": "7.0.0",
+    "entomai_updater": {
+        "enabled": true,
+        "is_free": true,
+        "license_prefix": "snippets",
+        "server": "https://entomai.com",
+        "api_key": "lb_xkpkkropjh2hanjf3qowaswigsezzoja3y2oqd4b",
+        "documentation_url": "https://entomai.com/docs/snippets",
+        "support_url": "https://entomai.com/support"
+    }
 }
